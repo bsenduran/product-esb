@@ -392,6 +392,23 @@
         <!--parameter name="http.proxyHost" locked="false">localhost</parameter-->
         <!--<parameter name="http.proxyPort" locked="false">3128</parameter>-->
         <!--<parameter name="http.nonProxyHosts" locked="false">localhost|moon|sun</parameter>-->
+
+       <!--<parameter name="proxyProfiles">
+            <profile>
+                <targetHosts>example.com, *.sample.com</targetHosts>
+                <proxyHost>localhost</proxyHost>
+                <proxyPort>3128</proxyPort>
+                <proxyUserName>squidUser</proxyUserName>
+                <proxyPassword>password</proxyPassword>
+                <bypass>xxx.sample.com</bypass>
+            </profile>
+            <profile>
+                <targetHosts>*</targetHosts>
+                <proxyHost>localhost</proxyHost>
+                <proxyPort>7443</proxyPort>
+                <bypass>test.com, direct.com</bypass>
+            </profile>
+        </parameter>-->
     </transportSender>
 
     <transportSender name="https" class="org.apache.synapse.transport.passthru.PassThroughHttpSSLSender">
